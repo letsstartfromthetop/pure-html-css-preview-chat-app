@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Chat app preview</title>
+</head>
+<body>
+<div class="chat-app-background" role="presentation">
+  <div class="left-bg-rectangle" role="presentation"></div>
+  <div role="presentation"></div>
+  <div class="right-bg-rectangle" role="presentation"></div>
+</div>
+<div class="chat-app-wrapper">
+<div class="chat-app-content">
+  <div class="phone-wrapper" role="region" aria-label="Phone interface">
+    <div class="phone-camera" role="presentation"></div>
+    <div class="phone-screen" role="region" aria-label="Chat application">
+      <div class="app-header" role="banner">
+        <div class="back" role="button" aria-label="Go back">&lt;</div>
+        <div class="walker" role="region" aria-label="User profile">
+          <div class="picture">
+            <img src="./images/avatar.jpg" alt="Samuel Green's profile picture">
+          </div>
+          <div class="name">
+            Samuel Green
+           <div class="status" aria-label="Status: Available to Walk">Available to Walk</div>
+          </div>
+        </div>
+        <div class="menu" role="button" aria-label="Menu options"></div>
+      </div>
+      <div class="app-body" role="main">
+        <div class="messages" role="log" aria-label="Chat messages">
+
+          <div class="msg received" role="article" aria-label="Message from Samuel Green">That sounds great. I'd be happy with that.</div>
+          <div class="msg received" role="article" aria-label="Message from Samuel Green"> Could you send over some pictures of your dog, please?</div>
+
+          <div class="sent images" role="article" aria-label="Images sent by you">
+            <img src="images/dog-image-1.jpg" class="photo" alt="Dog picture 1">
+            <img src="images/dog-image-2.jpg" class="photo" alt="Dog picture 2">
+            <img src="images/dog-image-3.jpg" class="photo" alt="Dog picture 3">
+          </div>
+          <div class="msg sent" role="article" aria-label="Message sent by you">Here are a few pictures. She's a happy girl!</div> 
+          <div class="msg sent" role="article" aria-label="Message sent by you"> Can you make it?</div>
+
+          <div class="msg received" role="article" aria-label="Message from Samuel Green"> She looks so happy! The time we discussed works. How long shall I take her out
+            for?
+          </div>
+          <div class="msg received option" role="article" aria-label="Walk option from Samuel Green">
+            <div>
+            <span class="circle" aria-hidden="true"></span>
+            <span class="duration">30 minute walk</span></div>
+            <span class="price">$29</span>
+          </div>
+          <div class="msg received option" role="article" aria-label="Walk option from Samuel Green">
+            <div>
+            <span class="circle" aria-hidden="true"></span>
+            <span class="duration">1 hour walk</span></div>
+            <span class="price">$49</span>
+
+          </div>
+
+
+        </div>
+        <div class="compose-message" role="region" aria-label="Message composition area">
+          <span class="placeholder" aria-label="Type a message">Type a message…</span>
+          <button class="send" aria-label="Send message">  &gt; </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="promo-text" role="complementary" aria-label="Promotional information">
+
+    <h1>Simple booking</h1>
+
+    <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to
+      discuss arrangements and make bookings. Once the walk has been completed you can rate
+      your walker and book again all through the chat.</p>
+  </div>
+
+
+</div>
+</div>
+</body>
+</html>
